@@ -1,0 +1,114 @@
+:root {
+    --c-blue: #1e30f3;
+    --c-light-blue: #2e3479;
+    --c-gray: #6c757d;
+    --light-gary: #f3f3f3;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--light-gary);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--c-blue);
+}
+.navbar {
+    /* transition:  0.3s; */
+}
+.c-blue {
+    color: var(--c-blue);
+}
+.bg-blue {
+    background-color: var(--c-blue);
+}
+.bg-blue:hover {
+    background-color: var(--c-light-blue)
+}
+.c-gray {
+    color: var(--c-gray) !important
+}
+.translate-center {
+    transform: translate(-50%, -50%);
+}
+.sec-padding {
+    padding: 60px 0;
+}
+.font-3 {
+    font-size: 2.7rem;
+}
+/* .font-4 {
+    font-size: 3.5rem;
+} */
+.gradient-bg {
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%)
+}
+.gradient-c {
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+/* .radius-20 {
+    border-radius: 20px;
+} */
+.absolute-gradient::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    z-index: -1;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+/* Navbar */
+.navbar-toggler:focus {
+    box-shadow: none !important
+}
+nav .nav-link.active {
+    color: var(--c-blue) !important;
+    font-weight: 500;
+}
+
+
+@media (min-width: 576px) {
+    figure div {
+        max-width: 400px
+    }
+    figure div svg:first-of-type {
+        top: 80px !important;
+    }
+    figure div svg:nth-of-type(2) {
+        top: 110px !important;
+        right: -30px !important;
+    }
+    figure div svg:nth-of-type(3) {
+        bottom: 75px !important;
+    }
+    figure div svg:last-of-type {
+        bottom: 45px !important;
+        left: -30px !important;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+    h1.font-3 {
+        font-size: 3.4rem;
+    }
+    .f-large {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1.font-3 {
+        font-size: 4rem;
+    }
+    figure div {
+        max-width: 470px
+    }
+}
