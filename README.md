@@ -1,4 +1,4 @@
-# Personal Portfolio Interactive Landing Page:
+# Personal Portfolio [Interactive Landing Page]:
 This project features a modern, responsive landing page created as part of a front-end development training exercise. It showcases proficiency in the following technologies:
 - **HTML/HTML5**: Structuring the content and layout of the page.
 - **CSS/CSS3**: Styling and creating visually appealing designs.
